@@ -15,7 +15,28 @@ public class triplets {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+        int n,x=0,y=1,count=0;
+        System.out.println("Enter any Number");
+        n = scan.nextInt();
+        int a[]=new int[n];
+        for (int i=0;i<n;i++){
+            System.out.println("Enter any number");
+            a[i] = scan.nextInt();
+        }
+        while (x!=n&&y!=n) {
+            for (int i = 0; i < n; i++) {
+                if (i == x || i == y ) {
+                    continue;
+                } else if ((a[x] + a[y] + a[i]) == 0) {
+                    count++;
+                    System.out.println(a[x] + "+" + a[y] + "+" + a[i] + " = 0");
+                }
+            }
+            x++;
+            y++;
+        }
+        System.out.println(count);
+
     }
 
 }
