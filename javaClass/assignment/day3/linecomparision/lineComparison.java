@@ -10,6 +10,7 @@ public class lineComparison {
         System.out.println("Enter Coordinates of Second line");
         line line2 = new line();
         equals(line1,line2);
+        compareTo(line1,line2);
 
     }
 
@@ -19,6 +20,16 @@ public class lineComparison {
         else
             System.out.println("line 1 and line2 two are not equal");
     }
+    static void compareTo(line line1,line line2){
+        if(line1.LENGTH == line2.LENGTH)
+            System.out.println("line 1 and line2 two are equal");
+        else if (line1.LENGTH>line2.LENGTH)
+            System.out.println("line 1 is greater than line2");
+        else
+            System.out.println("line 2 is greater than line 1");
+    }
+
+
 }
 
 class line{
