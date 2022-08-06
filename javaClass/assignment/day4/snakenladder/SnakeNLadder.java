@@ -24,7 +24,8 @@ public class SnakeNLadder {
         switch (option){
             case IS_LADDER:
                 System.out.println("Yay... you got a Ladder");
-                POSITION+=dieNumber;
+                if (POSITION+dieNumber<=100)
+                    POSITION+=dieNumber;
                 break;
             case IS_SNAKE:
                 System.out.println("Oops it's a Snake");
