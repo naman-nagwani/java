@@ -47,3 +47,8 @@ public class SnakeNLadder {
 
     }
 }
+class player{
+    static int POSITION=0; //current position
+    static int TOTAL_DIE_ROLL=0;
+
+}
